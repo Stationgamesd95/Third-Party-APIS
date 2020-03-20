@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Work Day Scheduler</title>
+</head>
+
+<body>
+  <header class="jumbotron">
+    <h1 class="display-3">Work Day Scheduler</h1>
+    <p class="lead">A simple calendar app for scheduling your work day</p>
+    <p id="currentDay" class="lead"></p>
+  </header>
+  <!-- Timeblocks go here -->
+  <div class="container">
+    <div class="row" id="NINE">
+      <div class="col-md-1 hour">
+        9AM
+      </div>
+      <textarea class="col-md-10 past description" id="text9" data-time="9"></textarea>
+      <button type="button" id="activate" class="col-1 saveBtn"><i class="far fa-save"></i></button>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row" id="TEN">
+      <div class="col-md-1 hour">
+        10AM
+      </div>
+      <textarea class="col-md-10 past description" id="text10" data-time="10"></textarea>
+      <button type="button" id="activate" class="col-1 saveBtn"><i class="far fa-save"></i></button>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row" id="ELEVEN">
+      <div class="col-md-1 hour">
+        11AM
+      </div>
+      <textarea class="col-md-10 past description" id="text11" data-time="11"></textarea>
+      <button type="button" id="activate" class="col-1 saveBtn"><i class="far fa-save"></i></button>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row" id="TWELVE">
+      <div class="col-md-1 hour">
+        12PM
+      </div>
+      <textarea class="col-md-10 past description" id="text12" data-time="12"></textarea>
+      <button type="button" id="activate" class="col-1 saveBtn"><i class="far fa-save"></i></button>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row" id="ONE">
+      <div class="col-md-1 hour">
+        1PM
+      </div>
+      <textarea class="col-md-10 past description" id="text1" data-time="13"></textarea>
+      <button type="button" id="activate" class="col-1 saveBtn"><i class="far fa-save"></i></button>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row" id="TWO">
+      <div class="col-md-1 hour">
+        2PM
+      </div>
+      <textarea class="col-md-10 past description" id="text2" data-time="14"></textarea>
+      <button type="button" id="activate" class="col-1 saveBtn"><i class="far fa-save"></i></button>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row" id="THREE">
+      <div class="col-md-1 hour">
+        3PM
+      </div>
+      <textarea class="col-md-10 past description" id="text3" data-time="15"></textarea>
+      <button type="button" id="activate" class="col-1 saveBtn"><i class="far fa-save"></i></button>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row" id="FOUR">
+      <div class="col-md-1 hour">
+        4PM
+      </div>
+      <textarea class="col-md-10 past description" id="text4" data-time="16"></textarea>
+      <button type="button" id="activate" class="col-1 saveBtn"><i class="far fa-save"></i></button>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row" id="FIVE">
+      <div class="col-md-1 hour">
+        5PM
+      </div>
+      <textarea class="col-md-10 past description" id="text5" data-time="17"></textarea>
+      <button type="button" id="activate" class="col-1 saveBtn"><i class="far fa-save"></i></button>
+    </div>
+  </div>
+
+
+
+
+  <script src="script.js"></script>
+  <script>
+    //Curent Day javascript was added on the html page
+    //Hard to add it on the javascript page itself
+    var dt = new Date();
+    document.getElementById("currentDay").innerHTML = dt.toLocaleString();
+    </script>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+</body>
+
+</html>
